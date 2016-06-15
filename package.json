@@ -1,0 +1,53 @@
+{
+  "name": "get-tz",
+  "version": "1.0.0",
+  "description": "Get time zone data from IANA time zone database",
+  "repository": "shinnn/get-tz",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --config @shinnn/node index.js test.js",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "request",
+    "get",
+    "fetch",
+    "extract",
+    "parse",
+    "latest",
+    "tz",
+    "time",
+    "zone",
+    "zones",
+    "timezone",
+    "timezones",
+    "list",
+    "data",
+    "database",
+    "iana",
+    "code",
+    "country",
+    "country-code",
+    "coordinate",
+    "coordinates",
+    "id",
+    "identifier",
+    "identifiers"
+  ],
+  "dependencies": {
+    "get-zonetab": "^1.0.0",
+    "parse-zonetab": "^1.0.0"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^2.0.0",
+    "eslint": "^2.12.0",
+    "istanbul": "^0.4.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}
